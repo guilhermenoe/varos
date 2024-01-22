@@ -53,7 +53,7 @@ const MenuMobile = () => {
           className="fixed inset-0 bg-[#131313] z-50 overflow-y-auto top-0 left-0 w-full h-full"
         >
           <div className="flex-col flex pt-24">
-            <div className="w-full flex flex-col mb-10">
+            <div className="w-[98%] mx-auto flex flex-col mb-10">
               <button className="text-white focus:outline-none py-[10px] px-3 bg-transparent flex items-center self-center gap-4 border border-white rounded w-full justify-center text-lg">
                 <Image
                   src="/user.png"
