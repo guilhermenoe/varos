@@ -1,0 +1,24 @@
+/* SliderVistos.module.css */
+.slide-container {
+  width: 93px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slick-initialized .slick-slide {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .slick-slider .slick-initialized,
+  .sliderContainer {
+    text-align: -webkit-center;
+  }
+}
