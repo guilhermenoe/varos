@@ -7,14 +7,17 @@ import { HiArrowRight } from "react-icons/hi2";
 const MenuMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
+  useEffect(() => {const handleScroll = () => {
+    const menuContainer = document.getElementById("menu-container");
+  
+    if (menuContainer) {
       if (menuOpen) {
-        document.getElementById("menu-container").classList.add("menu-open");
+        menuContainer.classList.add("menu-open");
       } else {
-        document.getElementById("menu-container").classList.remove("menu-open");
+        menuContainer.classList.remove("menu-open");
       }
-    };
+    }
+  };
 
     window.addEventListener("scroll", handleScroll);
 
