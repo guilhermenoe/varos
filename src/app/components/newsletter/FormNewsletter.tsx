@@ -63,7 +63,7 @@ const FormNewsletter = () => {
           {errors.celular && <p className="text-red-500">Insira um número de celular válido</p>}
         </div>
 
-        <button type="submit" className="flex h-12 p-2 pl-6 pr-6 justify-center items-center self-stretch rounded-4 border border-solid border-white bg-green-500 text-black font-red-hat-display text-lg font-semibold tracking-wider">
+        <button type="submit" className="flex h-12 p-2 pl-6 pr-6 justify-center items-center self-stretch rounded-4 border border-solid border-[#FAFAFA] bg-[#19C819] text-black text-lg font-normal whitespace-nowrap">
           QUERO ME INSCREVER
         </button>
       </form>
