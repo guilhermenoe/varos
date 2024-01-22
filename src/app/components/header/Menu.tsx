@@ -1,7 +1,6 @@
 import Logo from "./Logo";
 
 const Menu = () => {
-
   return (
     <div className="relative">
       {/* Desktop Menu */}

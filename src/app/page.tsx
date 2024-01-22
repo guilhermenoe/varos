@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="container mx-auto mt-16 md:mt-40 md:flex"> {/* Use md:flex to maintain the current desktop layout */}
+      <div className="container px-4 sm:p-0 mx-auto mt-16 md:mt-40 md:flex"> 
         <div className="md:w-1/2">
           <TitleHero />
           <ShelfProduct />
@@ -31,13 +31,13 @@ export default function Home() {
       </div>
 
       {/* Investment Section */}
-      <div className="container mx-auto mt-40 md:mt-64 mb-7">
+      <div className="container px-4 sm:p-0 mx-auto mt-40 md:mt-64 mb-7">
         <TitleInvestment />
         <Investments />
       </div>
 
       {/* Testimonial Section */}
-      <div className="container mx-auto flex flex-col md:flex-row mt-20 md:mt-52 mb-7 gap-20">
+      <div className="container px-4 sm:p-0 mx-auto flex flex-col md:flex-row mt-20 md:mt-52 mb-7 gap-20">
         <div className="md:w-1/2">
           <TestimonialTitle />
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
 
       {/* Newsletter Section */}
-      <div className="container mx-auto flex flex-col md:flex-row mt-32 mb-32 md:mt-48 md:mb-32 gap-20">
+      <div className="container px-4 sm:p-0 mx-auto flex flex-col md:flex-row mt-32 mb-32 md:mt-48 md:mb-32 gap-20">
         <div className="md:w-1/2">
           <NewsletterTitle />
         </div>

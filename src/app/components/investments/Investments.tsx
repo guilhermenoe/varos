@@ -302,7 +302,7 @@ const Investments = () => {
                 </p>
               </>
             )}
-            <div className="w-621 h-329 flex-shrink-0 rounded-md border border-gray-800">
+            <div className="w-621 h-329 flex-shrink-0 rounded-[32px] rounded-bl-none overflow-hidden border border-gray-800">
               <img
                 src="https://i.imgur.com/IFBADis.png"
                 alt={selectedItem.text}

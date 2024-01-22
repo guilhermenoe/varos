@@ -46,8 +46,9 @@ const SliderVistos = () => {
   };
 
   return (
-    <div className="container mt-14 mb-20 md:mr-auto max-w-[500px]" id="solucoes">
-      <div className={`rounded-3xl p-27 py-19 pl-35 pr-0 border border-solid border-gray-300 overflow-hidden ${styles.sliderContainer}`}>
+    <div className=" md:mt-[88px] mt-[72px] w-full rounded-3xl bg-gradient-to-r from-gray-700 to-gray-700/0 p-[1px]">
+    <div className={`rounded-3xl bg-black ${styles.sliderContainer}`} id="solucoes">
+      <div className={`rounded-3xl `}>
         <SliderVisto {...settings}>
           <div className={`w-24 h-29 flex items-center justify-center ${styles.slideContainer}`}>
             <img
@@ -82,6 +83,7 @@ const SliderVistos = () => {
           </div>
           </SliderVisto>
       </div>
+    </div>
     </div>
   );
 };

@@ -50,9 +50,9 @@ const MenuMobile = () => {
       {menuOpen && (
         <div
           id="menu-container"
-          className="absolute inset-0 bg-[#131313] z-50 h-screen overflow-y-auto"
+          className="fixed inset-0 bg-[#131313] z-50 overflow-y-auto top-0 left-0 w-full h-full"
         >
-          <div className="absolute flex-col top-0 left-0 w-full h-full flex items-center justify-center mt-24 pt-24">
+          <div className="flex-col flex pt-24">
             <div className="w-full flex flex-col mb-10">
               <button className="text-white focus:outline-none py-[10px] px-3 bg-transparent flex items-center self-center gap-4 border border-white rounded w-full justify-center text-lg">
                 <Image
@@ -104,7 +104,7 @@ const MenuMobile = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col px-4 justify-center bg-[#131313] z-50 h-screen">
+            <div className="w-full flex flex-col px-4 bg-[#131313] z-50 h-screen">
               <div className="w-full gap py-7 border-b-2 border-[#222729]">
                 <span className="text-white text-base font-bold">Blog</span>
               </div>
