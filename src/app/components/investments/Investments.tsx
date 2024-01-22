@@ -1,5 +1,5 @@
-'use client';
-import React, { useState, useEffect, useMemo } from 'react';
+"use client";
+import React, { useState, useEffect, useMemo } from "react";
 import { RiArrowRightSFill, RiArrowDropDownFill } from "react-icons/ri";
 
 interface CategoryItem {
@@ -22,153 +22,156 @@ const Investments = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [initialClick, setInitialClick] = useState(false);
 
-  
-  const categories = useMemo(() => [
-    {
-      name: "Carteiras",
-      items: [
-        {
-          icon: "/Selecao-icon.png",
-          text: "Carteira Seleção",
-          description: {
-            title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 1",
+  const categories = useMemo(
+    () => [
+      {
+        name: "Carteiras",
+        items: [
+          {
+            icon: "/Selecao-icon.png",
+            text: "Carteira Seleção",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 1",
+            },
           },
-        },
-        {
-          icon: "/investiments/FATORinvesti.png",
-          text: "Carteira FATOR",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 2",
+          {
+            icon: "/investiments/FATORinvesti.png",
+            text: "Carteira FATOR",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 2, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 2",
+            },
           },
-        },
-        {
-          icon: "/investiments/Dividendos.png",
-          text: "Carteira Dividendos",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 3, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 3",
+          {
+            icon: "/investiments/Dividendos.png",
+            text: "Carteira Dividendos",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 3, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 3",
+            },
           },
-        },
-        {
-          icon: "/investiments/Essencial.png",
-          text: "Carteira Essencial",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 4, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 4",
+          {
+            icon: "/investiments/Essencial.png",
+            text: "Carteira Essencial",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 4, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 4",
+            },
           },
-        },
-        {
-          icon: "/investiments/FII.png",
-          text: "Carteira de FIIs",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 5, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 5",
+          {
+            icon: "/investiments/FII.png",
+            text: "Carteira de FIIs",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 5, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 5",
+            },
           },
-        },
-        {
-          icon: "/investiments/smallcaps.png",
-          text: "Carteira Small Caps",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 6, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 6",
+          {
+            icon: "/investiments/smallcaps.png",
+            text: "Carteira Small Caps",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 6, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 6",
+            },
           },
-        },
-      ],
-    },
-    {
-      name: "Cursos",
-      items: [
-        {
-          icon: "/investiments/VZA.png",
-          text: "Valuation 2.0",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 7, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 7",
+        ],
+      },
+      {
+        name: "Cursos",
+        items: [
+          {
+            icon: "/investiments/VZA.png",
+            text: "Valuation 2.0",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 7, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 7",
+            },
           },
-        },
-        {
-          icon: "/investiments/Frame.png",
-          text: "Código.py",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 8, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 8",
+          {
+            icon: "/investiments/Frame.png",
+            text: "Código.py",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 8, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 8",
+            },
           },
-        },
-        {
-          icon: "/investiments/Dash.png",
-          text: "Dash.py",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 9, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 9",
+          {
+            icon: "/investiments/Dash.png",
+            text: "Dash.py",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 9, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 9",
+            },
           },
-        },
-        {
-          icon: "/investiments/Essencial.png",
-          text: "Carteira Essencial",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 10, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 10",
+          {
+            icon: "/investiments/Essencial.png",
+            text: "Carteira Essencial",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 10, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 10",
+            },
           },
-        },
-        {
-          icon: "/investiments/Minicurso.png",
-          text: "Curso Reels",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 11, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 11",
+          {
+            icon: "/investiments/Minicurso.png",
+            text: "Curso Reels",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 11, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 11",
+            },
           },
-        },
-        {
-          icon: "/investiments/Enciclopedia.png",
-          text: "Enciclopédia de FII",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 12, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 12",
+          {
+            icon: "/investiments/Enciclopedia.png",
+            text: "Enciclopédia de FII",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 12, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 12",
+            },
           },
-        },
-      ],
-    },
-    {
-      name: "Consultoria",
-      items: [
-        {
-          icon: "/investiments/VZA.png",
-          text: "Consultoria VAROS",
-          description: {
-            title:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit 13, ",
-            subtitle:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 13",
+        ],
+      },
+      {
+        name: "Consultoria",
+        items: [
+          {
+            icon: "/investiments/VZA.png",
+            text: "Consultoria VAROS",
+            description: {
+              title:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit 13, ",
+              subtitle:
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 13",
+            },
           },
-        },
-      ],
-    },
-  ], []);
+        ],
+      },
+    ],
+    []
+  );
 
   useEffect(() => {
     const loadImage = (src: string) => {
@@ -176,23 +179,21 @@ const Investments = () => {
       image.src = src;
       image.onload = () => setImageLoaded(true);
     };
-  
+
     categories.forEach((category) => {
       category.items.forEach((item) => loadImage(item.icon));
     });
-  
-    // Marcar o clique inicial como true após um pequeno atraso
+
     const initialClickTimeout = setTimeout(() => {
       setInitialClick(true);
     }, 1000);
-  
+
     return () => {
       clearTimeout(initialClickTimeout);
     };
   }, [categories, setInitialClick]);
 
   useEffect(() => {
-    // Definir o selectedItem quando a categoria inicial é selecionada
     if (initialClick && selectedCategory) {
       const selectedCategoryObj = categories.find(
         (category) => category.name === selectedCategory
@@ -205,7 +206,6 @@ const Investments = () => {
 
   const handleCategoryChange = (category: string) => {
     if (!initialClick) {
-      // Ignorar a mudança de categoria se o clique inicial ainda não ocorreu
       return;
     }
 
@@ -278,7 +278,7 @@ const Investments = () => {
       </div>
 
       {selectedItem && (
-         <div className="w-full md:w-1/2 self-center md:h-[530px]">
+        <div className="w-full md:w-1/2 self-center md:h-[530px]">
           <div className="bg-[#131516] p-4 rounded-md border border-gray-800">
             <div className="inline-flex h-16 p-4 justify-center items-center gap-4 flex-shrink-0">
               {imageLoaded && selectedCategory && (
